@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterapp/Screens/registration.dart';
 import 'package:flutterapp/start_page.dart';
 
 import 'add_tenant.dart';
@@ -10,10 +11,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute: '/startPage',
+      initialRoute: '/registrationPage',
       routes: {
         '/startPage': (context) => StartPage(),
         '/addTenant': (context) => AddTenant(),
+        '/registrationPage': (context) => RegistrationPage(),
       },
       title: 'Flutter Demo',
       theme: ThemeData(
